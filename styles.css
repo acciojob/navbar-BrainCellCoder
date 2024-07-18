@@ -1,1 +1,42 @@
-/*  your css code here. If applicable */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #6e072d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    border-right: 2px solid white; /* Solid white border between items */
+    font-size: 18px;
+    line-height: 18px; /* Vertical padding is equal to font-size */
+}
+
+li.last-item {
+    border-right: none; /* Remove border for the last item in each list */
+}
+
+li a {
+    display: block;
+    padding: 18px 27px; /* Horizontal padding is 1.5 times font-size */
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+li a:hover {
+    background-color: #b90e4d;
+    cursor: pointer;
+}
